@@ -23,7 +23,7 @@ K <- 15 #number of topics
 
 #fit LDA
 result <- lda.collapsed.gibbs.sampler(documents=lex_reviews[[1]], 
-                                      K, vocab=lex_reviews[[2]], num.iterations=3000,
+                                      K, vocab=lex_reviews[[2]], num.iterations=1000,
                                       alpha=0.1, eta=0.1, compute.log.likelihood=TRUE)
 
 ## Get the top words in the cluster
